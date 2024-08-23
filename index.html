@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b1504c9af4.js" crossorigin="anonymous"></script>
+    <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+</head>
+
+<body>
+    <div class="whole-dashboard">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="Group 19.png" alt='Logo' />
+            </div>
+            <ul class="menu-items">
+                <li><i class="fas fa-tachometer-alt fa-sm icon-nav"></i><span>Dashboard</span></li>
+                <li><i class="fas fa-project-diagram fa-sm icon-nav"></i><span>CRM</span></li>
+                <li><i class="fas fa-box-open fa-sm icon-nav"></i><span>MAM</span></li>
+                <li><i class="fas fa-chart-pie fa-sm icon-nav"></i><span>PAMM</span></li>
+                <li><i class="fas fa-arrows-alt-h fa-sm icon-nav"></i><span>Trade</span></li>
+                <li><i class="fas fa-wallet fa-sm icon-nav"></i><span>Wallet</span></li>
+                <li><i class="fas fa-dollar-sign fa-sm icon-nav"></i><span>Accounts</span></li>
+                <li><i class="fas fa-history fa-sm icon-nav"></i><span>History</span></li>
+            </ul>        
+
+            <div class="bottom-menu">
+                <ul>
+                    <li><i class="fas fa-bell fa-sm icon-nav"></i><span>Notification</span></li>
+                    <li><i class="fas fa-cog fa-sm icon-nav"></i><span>Settings</span></li>
+                    <li><i class="fas fa-headphones fa-sm icon-nav"></i><span>Help & Support</span></li>
+                    <li><i class="fas fa-sign-out-alt fa-sm icon-nav"></i><span>Logout</span></li>
+                </ul>
+                <hr />
+                <div class='mailcontainer col-2'>
+                    <i class="fas fa-user fa-sm bg-person"></i>
+                    <div>
+                        <h1 class="head-side">Shyam Shakur</h1>
+                        <p class="para-side">shyam01.Shakur@mail...</p>
+                    </div>
+                </div>
+            </div>        
+        </div>
+
+        <div class="dashboard-container">
+        <div class="top-Search-Container">
+            <div>
+                <h1>Dashboard</h1>
+            </div>
+            <div style="display: flex; align-items: center; border: 1px solid #ccc; border-radius: 4px; padding: 0 8px;">
+                <i class="fas fa-search" style="margin-right: 8px;"></i>
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  style="border: none; outline: none; flex: 1;" 
+                />
+            </div>  
+        </div>
+
+        <div class="divided-container">
+            <div  class="first-container">
+                <div class="cards-container">
+                    <h1 class="card-head">Quick Lines</h1>
+                    <div class="cards">
+                      <div class="card-icon">
+                        <i class="fa-solid fa-arrow-down-long icon"></i>
+                        <p class="para-card">Deposit</p>
+                      </div>
+                      
+                      <div class="card-icon">
+                        <i class="fa-solid fa-arrow-up-long icon"></i>
+                        <p class="para-card">Withdraw</p>
+                      </div>
+                      
+                      <div class="card-icon">
+                        <i class="fas fa-cog icon"></i>
+                        <p class="para-card">Settings</p>
+                      </div>
+                      
+                      <div class="card-icon">
+                        <i class="fas fa-user-check icon"></i>
+                        <p class="para-card">Verification</p>
+                      </div>
+                      
+                      <div class="card-icon">
+                        <i class="far fa-star icon"></i>
+                        <p class="para-card">Bonuses</p>
+                      </div>
+                      
+                      <div class="card-icon">
+                        <i class="fas fa-chart-line icon"></i>
+                        <p class="para-card">MTS</p>
+                      </div>
+                      
+                      <div class="card-icon">
+                        <i class="fas fa-exchange-alt icon"></i>
+                        <p class="para-card">Transfer</p>
+                      </div>
+                      
+                      <div class="card-icon">
+                        <i class="fas fa-history icon"></i>
+                        <p class="para-card">History</p>
+                      </div>
+                      
+                      <div class="card-icon">
+                        <i class="fas fa-user icon"></i>
+                        <p class="para-card">Partner</p>
+                      </div>
+                      
+                      <div class="card-icon">
+                        <i class="fas fa-exchange-alt icon"></i>
+                        <p class="para-card">Exchange</p>
+                      </div>
+                      
+                      <div class="card-icon">
+                        <i class="fas fa-chart-pie icon"></i>
+                        <p class="para-card">Analytics</p>
+                      </div>
+                      
+                    </div>
+                </div>    
+                <div class="cards-container">
+                    <div class="divided-container" style="display: flex; justify-content: space-between;">
+                        <h1 class="card-head">Overview</h1>
+                        <p class="para-graph">
+                            <i class="fa-solid fa-download" style="padding-right: 5px; font-size: 15px;"></i>
+                            Download Report
+                        </p>
+                    </div>
+                    <div class="divided-container">
+                        <button class='unactived'>Monthly</button>
+                        <button class='actived'>Yearly</button>
+                        </div>
+                <canvas id="myChart" style="width:100%;max-width:700px"></canvas>      
+                </div>        
+            </div>
+            <div class="second-container">
+            <div class="cards-container-bottom" style="margin-bottom: 20px;">
+                <div class="card-price">
+                  <p class="master">Master Account</p>
+                  
+                  <div class="cards-header">
+                    <span class="CTrader">CTrader</span>
+                    <span class="numbers">#273728</span>
+                  </div>
+                  
+                  <div style="display: flex; justify-content: space-between; padding-top: 10px;">
+                    <span class="pair">0.00 <span style="font-size: 20px;">USD</span></span>
+                    <span><i class="fa-solid fa-arrow-up-long" style="padding-top: 10px; font-size: 25px;"></i></span>
+                  </div>
+                </div>
+
+                <div class="card-price">
+                    <p class="master">Master Account</p>
+                    
+                    <div class="cards-header">
+                      <span class="CTrader">CTrader</span>
+                      <span class="numbers">#273728</span>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; padding-top: 10px;">
+                      <span class="pair">0.00 <span style="font-size: 20px;">USD</span></span>
+                      <span><i class="fa-solid fa-arrow-up-long" style="padding-top: 10px; font-size: 25px;"></i></span>
+                    </div>
+                  </div>
+              </div>
+
+              <div class='cards-container-bottom'>
+                <div class="card-price"  style="background-color: #ffffff;">
+                  <div style="display: flex; justify-content: space-between;">
+                    <span class="pair">GBPUSD</span>
+                    <span class="position long">Long</span>
+                    <span class="details">0.12</span>
+                  </div>
+                  <div class="amount positive" style="padding-top: 5px;">+56.00 USD</div>
+                </div>
+
+                <div class="card-price"  style="background-color: #ffffff;">
+                    <div style="display: flex; justify-content: space-between;">
+                      <span class="pair">GBPUSD</span>
+                      <span class="position long">Long</span>
+                      <span class="details">0.52</span>
+                    </div>
+                    <div class="amount negative" style="padding-top: 5px;">+56.00 USD</div>
+                </div>
+
+                <div class="card-price"  style="background-color: #ffffff;">
+                    <div style="display: flex; justify-content: space-between;">
+                      <span class="pair">GBPUSD</span>
+                      <span class="position short">Short</span>
+                      <span class="details">0.52</span>
+                    </div>
+                    <div class="amount negative" style="padding-top: 5px;">+56.00 USD</div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    const xValues = ["Jan", "Feb", "Mar", "Aug", "Apr","May","Jun","Jul","Sep","Oct","Nov","Dec"];
+const yValues = [900, 450, 500, 1200, 390,400,600,700,900,450,550,500];
+const barColor = "#9B76D6";  // Single color for all bars
+
+new Chart("myChart", {
+    type: "bar",
+    data: {
+        labels: xValues,
+        datasets: [{
+            backgroundColor: barColor,  // Apply the same color to all bars
+            data: yValues
+        }]
+    },
+    options: {
+        legend: { display: false },
+        title: {
+            display: true,
+        }
+    }
+});
+
+    </script>
+</body>
+
+</html>
